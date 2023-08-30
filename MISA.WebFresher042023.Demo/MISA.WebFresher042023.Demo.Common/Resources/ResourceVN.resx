@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountCode" xml:space="preserve">
+    <value>Mã tài khoản</value>
+  </data>
+  <data name="AccountFeature" xml:space="preserve">
+    <value>Tính chất</value>
+  </data>
+  <data name="AccountingDate" xml:space="preserve">
+    <value>Ngày hạch toán</value>
+  </data>
+  <data name="Accountings" xml:space="preserve">
+    <value>Hạch toán kinh tế</value>
+  </data>
+  <data name="AccountName" xml:space="preserve">
+    <value>Tên tài khoản</value>
+  </data>
+  <data name="AccountNameEnglish" xml:space="preserve">
+    <value>Tên tiếng anh</value>
+  </data>
+  <data name="AccountOfDebt" xml:space="preserve">
+    <value>Số tiền nợ</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="AdvanceForEmployees" xml:space="preserve">
+    <value>Tạm ứng cho nhân viên</value>
+  </data>
+  <data name="BankAccount" xml:space="preserve">
+    <value>Số tài khoản ngân hàng</value>
+  </data>
+  <data name="BankBranch" xml:space="preserve">
+    <value>Tên chi nhánh</value>
+  </data>
+  <data name="BankCity" xml:space="preserve">
+    <value>Tỉnh/thành phố của ngân hàng</value>
+  </data>
+  <data name="BankName" xml:space="preserve">
+    <value>Tên ngân hàng</value>
+  </data>
+  <data name="BuyOutsideWithInvoice" xml:space="preserve">
+    <value>Chi mua ngoài có hóa đơn</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="DepartmentName" xml:space="preserve">
+    <value>Phòng ban</value>
+  </data>
+  <data name="DepositMoneyInTheBank" xml:space="preserve">
+    <value>Gửi tiền vào ngân hàng</value>
+  </data>
+  <data name="DueTime" xml:space="preserve">
+    <value>Số ngày được nợ</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailReceiverBill" xml:space="preserve">
+    <value>Email người nhận hóa đơn</value>
+  </data>
+  <data name="EmployeeCode" xml:space="preserve">
+    <value>Mã nhân viên</value>
+  </data>
+  <data name="Explain" xml:space="preserve">
+    <value>Diễn giải</value>
+  </data>
+  <data name="FeMale" xml:space="preserve">
+    <value>Nữ</value>
+  </data>
+  <data name="Fullname" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="FullnameReceiverBill" xml:space="preserve">
+    <value>Tên người nhận hóa đơn</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="GroupSuppliersId" xml:space="preserve">
+    <value>Nhóm nhà cung cấp</value>
+  </data>
+  <data name="IdentityNumber" xml:space="preserve">
+    <value>Số chứng minh thư</value>
+  </data>
+  <data name="IdentityPlaceRelease" xml:space="preserve">
+    <value>Nơi cấp</value>
+  </data>
+  <data name="IsCustomer" xml:space="preserve">
+    <value>Là khách hàng</value>
+  </data>
+  <data name="IsSupplier" xml:space="preserve">
+    <value>Là nhà cung cấp</value>
+  </data>
+  <data name="LegalRepresentative" xml:space="preserve">
+    <value>Đại diện pháp luật</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>Nam</value>
+  </data>
+  <data name="MaxAccountOfDebt" xml:space="preserve">
+    <value>Số nợ tối đa</value>
+  </data>
+  <data name="MobilePhoneNumber" xml:space="preserve">
+    <value>Số điện thoại di động</value>
+  </data>
+  <data name="Money" xml:space="preserve">
+    <value>Số tiền</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="NumberOrder" xml:space="preserve">
+    <value>STT</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Khác</value>
+  </data>
+  <data name="OtherSpending" xml:space="preserve">
+    <value>Chi khác</value>
+  </data>
+  <data name="ParentName" xml:space="preserve">
+    <value>Tài khoản tổng hợp</value>
+  </data>
+  <data name="Payment" xml:space="preserve">
+    <value>Phiếu chi</value>
+  </data>
+  <data name="PaymentCode" xml:space="preserve">
+    <value>Số phiếu chi</value>
+  </data>
+  <data name="PaymentDate" xml:space="preserve">
+    <value>Ngày phiếu chi</value>
+  </data>
+  <data name="PaySalaryForEmployees" xml:space="preserve">
+    <value>Trả lương nhân viên</value>
+  </data>
+  <data name="PaySuppliersNotBilled" xml:space="preserve">
+    <value>Trả tiền nhà cung cấp (không theo hóa đơn)</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Số điện thoại cố định</value>
+  </data>
+  <data name="PhoneNumberReceiverBill" xml:space="preserve">
+    <value>Số điện thoại người nhận hóa đơn</value>
+  </data>
+  <data name="PositionName" xml:space="preserve">
+    <value>Chức danh</value>
+  </data>
+  <data name="ReceiptType" xml:space="preserve">
+    <value>Loại chứng từ</value>
+  </data>
+  <data name="ResonDepositWithdraw" xml:space="preserve">
+    <value>Lý do thu/chi</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="Sum" xml:space="preserve">
+    <value>Tổng</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>Nhà cung cấp</value>
+  </data>
+  <data name="SupplierCode" xml:space="preserve">
+    <value>Mã nhà cung cấp</value>
+  </data>
+  <data name="SupplierName" xml:space="preserve">
+    <value>Tên nhà cung cấp</value>
+  </data>
+  <data name="SupplierType" xml:space="preserve">
+    <value>Loại nhà cung cấp</value>
+  </data>
+  <data name="TaxCode" xml:space="preserve">
+    <value>Mã số thuế</value>
+  </data>
+  <data name="TransferMoneyToAnotherBranch" xml:space="preserve">
+    <value>Chuyển tiền cho chi nhánh khác</value>
+  </data>
+  <data name="UserMsg_AccountCodeFormat" xml:space="preserve">
+    <value>Mã tài khoản chỉ chứa chữ và số.</value>
+  </data>
+  <data name="UserMsg_AccountCodeNeedPrefixAccountParentCode" xml:space="preserve">
+    <value>Số tài khoản không hợp lệ. Số tài khoản chi tiết phải bắt đầu bằng số của Tài khoản tổng hợp.</value>
+  </data>
+  <data name="UserMsg_AccountSupplierAndPaymentLackSupplier" xml:space="preserve">
+    <value>Tài khoản &lt;{0}&gt; theo &lt;Nhà cung cấp&gt;, chứng từ hạch toán thiếu &lt;Nhà cung cấp&gt;.</value>
+  </data>
+  <data name="UserMsg_AccountUsingAndParentNotUsing" xml:space="preserve">
+    <value>Tài khoản cha đang ở trạng thái \"Ngừng sử dụng\". Bạn không thể thiết lập trạng thái \"Sử dụng\" cho Tài khoản con.</value>
+  </data>
+  <data name="UserMsg_CantChangeSupplierCode" xml:space="preserve">
+    <value>Không thể thay đổi mã nhà cung cấp vì đã phát sinh chứng từ.</value>
+  </data>
+  <data name="UserMsg_CantDeleteSupplier" xml:space="preserve">
+    <value>Không thể xóa nhà cung cấp đã phát sinh chứng từ.</value>
+  </data>
+  <data name="UserMsg_ContainsOnlyNumber" xml:space="preserve">
+    <value>{0} chỉ chứa ký tự số</value>
+  </data>
+  <data name="UserMsg_DateAccountingNeedMoreDatePayment" xml:space="preserve">
+    <value>Ngày hạch toán phải lớn hơn hoặc bằng Ngày chứng từ &lt;{0}&gt;. Xin vui lòng kiểm tra lại.</value>
+  </data>
+  <data name="UserMsg_DateOfBirth" xml:space="preserve">
+    <value>Ngày sinh không lớn hơn ngày hiện tại.</value>
+  </data>
+  <data name="UserMsg_DeleteAccountArisingAccounting" xml:space="preserve">
+    <value>Tài khoản đã phát sinh hạch toán không thể xóa.</value>
+  </data>
+  <data name="UserMsg_DeleteAccountHasChildren" xml:space="preserve">
+    <value>Xóa không thành công. Không thể xóa danh mục cha nếu chưa xóa danh mục con.</value>
+  </data>
+  <data name="UserMsg_DeleteAccountSupplier" xml:space="preserve">
+    <value>Tài khoản đã được nhà cung cấp sử dụng không thể xóa.</value>
+  </data>
+  <data name="UserMsg_DepartmentIdEmpty" xml:space="preserve">
+    <value>Phòng ban không được để trống.</value>
+  </data>
+  <data name="UserMsg_DupAccountCode" xml:space="preserve">
+    <value>Mã tài khoản &lt;{0}&gt; đã tồn tại vui lòng kiểm tra lại.</value>
+  </data>
+  <data name="UserMsg_DupCode" xml:space="preserve">
+    <value>Mã &lt;{0}&gt; đã tồn tại. Vui lòng thử lại.</value>
+  </data>
+  <data name="UserMsg_DupEmployeeCode" xml:space="preserve">
+    <value>Mã nhân viên {0}  đã tồn tại lòng kiểm tra lại .</value>
+  </data>
+  <data name="UserMsg_DuplicateBankAccountNumber" xml:space="preserve">
+    <value>Số tài khoản {0} đã đã tồn tại.</value>
+  </data>
+  <data name="UserMsg_DupPaymentCode" xml:space="preserve">
+    <value>Số chứng từ &lt;{0}&gt; đã tồn tại. Nếu không tìm thấy số chứng từ &lt;{0}&gt;. Vui lòng thực hiện tính năng bảo trì số chứng từ.. Bạn có muốn chương trình tự động tăng số chứng từ không?</value>
+  </data>
+  <data name="UserMsg_EmployeeCodeEmpty" xml:space="preserve">
+    <value>Mã nhân viên không được để trống.</value>
+  </data>
+  <data name="UserMsg_EmployeeCodeFormat" xml:space="preserve">
+    <value>Mã nhân viên không đúng định dạng [NV-]&lt;Mã số&gt;.</value>
+  </data>
+  <data name="UserMsg_Exception" xml:space="preserve">
+    <value>Đã xảy ra lỗi. Vui lòng liên hệ MS để được trợ giúp.</value>
+  </data>
+  <data name="UserMsg_FullnameEmpty" xml:space="preserve">
+    <value>Tên không được để trống.</value>
+  </data>
+  <data name="UserMsg_IdentityDateRelease" xml:space="preserve">
+    <value>Ngày cấp không lớn hơn ngày hiện tại.</value>
+  </data>
+  <data name="UserMsg_InValdAccounting" xml:space="preserve">
+    <value>Dữ liệu hạch toán kinh tế không hợp lệ.</value>
+  </data>
+  <data name="UserMsg_InValid" xml:space="preserve">
+    <value>Dữ liệu đầu vào không hợp lệ.</value>
+  </data>
+  <data name="UserMsg_InValidEmail" xml:space="preserve">
+    <value>Email không hợp lệ.</value>
+  </data>
+  <data name="UserMsg_IsNumber" xml:space="preserve">
+    <value>{0}  phải là môt số nguyên</value>
+  </data>
+  <data name="UserMsg_MaxLength" xml:space="preserve">
+    <value>{0} không quá {1} ký tự.</value>
+  </data>
+  <data name="UserMsg_MaxLengthEmployeeCode" xml:space="preserve">
+    <value>Mã nhân viên tối đâ 20 ký tự.</value>
+  </data>
+  <data name="UserMsg_MaxLengthFullName" xml:space="preserve">
+    <value>Tên tối đa 100 ký tự.</value>
+  </data>
+  <data name="UserMsg_MinLength" xml:space="preserve">
+    <value>{0} tối thiểu {1} ký tự.</value>
+  </data>
+  <data name="UserMsg_MoneyRange" xml:space="preserve">
+    <value>Số tiền phải  trong phạm vi -99.999.999.999 đến 99.999.999.999.</value>
+  </data>
+  <data name="UserMsg_NeedParentAccount" xml:space="preserve">
+    <value>Số tài khoản có độ dài &gt; 3 ký tự phải điền thông tin &lt;Tài khoản tổng hợp&gt;.</value>
+  </data>
+  <data name="UserMsg_NeedTypingAccountingDetail" xml:space="preserve">
+    <value>Bạn phải nhập chứng từ chi tiết.</value>
+  </data>
+  <data name="UserMsg_NotChangeParentWhenAccountIsParent" xml:space="preserve">
+    <value>Tài khoản chứa tài khoản khác nên không thể thay đổi tài khoản tổng hợp.</value>
+  </data>
+  <data name="UserMsg_NotEmpty" xml:space="preserve">
+    <value>{0} không được để trống.</value>
+  </data>
+  <data name="UserMsg_NotFound" xml:space="preserve">
+    <value>Không tìm thấy tài nguyên.</value>
+  </data>
+  <data name="UserMsg_NotFoundAccount" xml:space="preserve">
+    <value>không tìm thấy tài khoản.</value>
+  </data>
+  <data name="Usermsg_NotFoundAccounting" xml:space="preserve">
+    <value>Không tìm thấy hạch toán kinh tế.</value>
+  </data>
+  <data name="UserMsg_NotFoundAccountParent" xml:space="preserve">
+    <value>Không tìm thấy tài khoản tổng hợp.</value>
+  </data>
+  <data name="UserMsg_NotFoundAccountPayable" xml:space="preserve">
+    <value>Không tìm thấy tài khoản trả</value>
+  </data>
+  <data name="UserMsg_NotFoundAccountReceivable" xml:space="preserve">
+    <value>Không tìm thấy tài khoản thu</value>
+  </data>
+  <data name="UserMsg_NotFoundEmployee" xml:space="preserve">
+    <value>Không tìm thấy nhân viên.</value>
+  </data>
+  <data name="UserMsg_NotFoundEmployeeSupplier" xml:space="preserve">
+    <value>Không tìm thấy nhân viên mua hàng.</value>
+  </data>
+  <data name="UserMsg_NotFoundGroupSupplier" xml:space="preserve">
+    <value>Không tìm thấy nhóm nhà cung cấp.</value>
+  </data>
+  <data name="UserMsg_NotFoundPayment" xml:space="preserve">
+    <value>Không tìm thấy phiếu chi.</value>
+  </data>
+  <data name="UserMsg_NotFoundSupplier" xml:space="preserve">
+    <value>Không tìm thấy nhà cung cấp.</value>
+  </data>
+  <data name="UserMsg_NotFoundTermPayment" xml:space="preserve">
+    <value>Không tìm điều khoản thanh toán.</value>
+  </data>
+  <data name="UserMsg_NotUpdateAccountWhenParent" xml:space="preserve">
+    <value>Không được thay đổi số tài khoản vì tài khoản này chứa tài khoản khác trong hệ thống.</value>
+  </data>
+  <data name="UserMsg_PaymentWritten" xml:space="preserve">
+    <value>Phiếu chi đã được ghi sổ. Vui lòng kiểm tra lại.</value>
+  </data>
+  <data name="UserMsg_PaymentWrittenDontDelete" xml:space="preserve">
+    <value>Phiếu chi đã ghi sổ không thể xóa.</value>
+  </data>
+  <data name="UserMsg_Range" xml:space="preserve">
+    <value>{0} có phạm vi từ  {1} đến {2} .</value>
+  </data>
+  <data name="UserMsg_SupplierHasArisen" xml:space="preserve">
+    <value>Nhà cung cấp đã có phát sinh.</value>
+  </data>
+  <data name="UserMsg_UpdateAccountArisingAccounting" xml:space="preserve">
+    <value>Tài khoản đã phát sinh hạch toán không thể sửa.</value>
+  </data>
+  <data name="UserMsg_WrongInput" xml:space="preserve">
+    <value>Trường {0} nhập sai dữ liệu.</value>
+  </data>
+  <data name="Vocative" xml:space="preserve">
+    <value>Xưng hô</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+</root>

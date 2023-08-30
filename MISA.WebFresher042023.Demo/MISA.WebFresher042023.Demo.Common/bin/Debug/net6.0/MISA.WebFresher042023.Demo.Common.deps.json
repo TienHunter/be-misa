@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MISA.WebFresher042023.Demo.Common/1.0.0": {
+        "runtime": {
+          "MISA.WebFresher042023.Demo.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MISA.WebFresher042023.Demo.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
