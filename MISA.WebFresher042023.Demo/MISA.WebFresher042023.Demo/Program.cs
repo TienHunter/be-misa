@@ -12,6 +12,12 @@ using MISA.WebFresher042023.Demo.Infrastructure.UnitOfWork;
 using MISA.WebFresher042023.Demo.Middlewares;
 using System.ComponentModel.DataAnnotations;
 
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Reflection.Metadata;
+using MISA.WebFresher042023.Demo.Core.Interface.Identities;
+using MISA.WebFresher042023.Demo.Infrastructure.Identities;
+
 var builder = WebApplication.CreateBuilder(args);
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 // Add services to the container.
@@ -21,6 +27,30 @@ builder.Services.AddControllers()
         {
             options.JsonSerializerOptions.PropertyNamingPolicy = null;
         });
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.Audience = builder.Configuration["Jwt:Audience"];
+        options.RequireHttpsMetadata = false;
+        options.SaveToken = true;
+        options.TokenValidationParameters = new TokenValidationParameters()
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"])),
+
+            ValidateIssuer = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+
+            ValidateAudience = true,
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+
+            ValidateLifetime = true,
+        };
+
+    });
+//builder.Services.AddAuthorization();    
+
 
 // Custom error bad request
 builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
@@ -102,6 +132,13 @@ builder.Services.AddScoped<IPaymentManager, PaymentManager>();
 builder.Services.AddScoped<IAccountingRepository, AccountingRepository>();
 builder.Services.AddScoped<IAccountingManager, AccountingManager>();
 
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
+
+builder.Services.AddScoped<IJwtIdentity, JwtIdentity>();
+
+
+
 var app = builder.Build();
 app.UseCors(MyAllowSpecificOrigins);
 // Configure the HTTP request pipeline.
@@ -112,7 +149,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseMiddleware<ExceptionMiddlewares>();

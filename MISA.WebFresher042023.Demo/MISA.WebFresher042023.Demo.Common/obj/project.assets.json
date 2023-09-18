@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj",
+      "projectUniqueName": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj",
       "projectName": "MISA.WebFresher042023.Demo.Common",
-      "projectPath": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj",
+      "projectPath": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj",
       "packagesPath": "C:\\Users\\Tien\\.nuget\\packages\\",
-      "outputPath": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\obj\\",
+      "outputPath": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tien\\AppData\\Roaming\\NuGet\\NuGet.Config",

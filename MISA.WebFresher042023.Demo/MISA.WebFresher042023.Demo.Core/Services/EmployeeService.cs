@@ -240,17 +240,13 @@ namespace MISA.WebFresher042023.Demo.Core.Services
         /// Created by: vdtien (27/6/2023)
         private string ConvertGender(Gender? gender)
         {
-            switch (gender)
+            return gender switch
             {
-                case Gender.Male:
-                    return ResourceVN.Male;
-               case Gender.Female:
-                    return ResourceVN.FeMale;
-                case Gender.Other:
-                    return ResourceVN.Other;
-                default:
-                    return "";
-            }
+                Gender.Male => ResourceVN.Male,
+                Gender.Female => ResourceVN.FeMale,
+                Gender.Other => ResourceVN.Other,
+                _ => "",
+            };
         }
 
     }

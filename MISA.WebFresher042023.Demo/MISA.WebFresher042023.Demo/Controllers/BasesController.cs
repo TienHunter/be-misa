@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MISA.WebFresher042023.Demo.Common.DTO;
 using MISA.WebFresher042023.Demo.Common.DTO.Employee;
@@ -8,6 +9,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MISA.WebFresher042023.Demo.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public abstract class BasesController<TEnityDTO, TEntityCreateDTO, TEntityUpdateDTO> : ControllerBase

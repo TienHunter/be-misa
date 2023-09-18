@@ -110,11 +110,11 @@ namespace MISA.WebFresher042023.Demo.Core.Services
         {
             var tableName = typeof(TEntity).Name;
             var entity = _mapper.Map<TEntity>(entityCreateDTO);
-
+            var recordId = Guid.NewGuid();
             var fieldId = entity?.GetType().GetProperty($"{tableName}Id");
             if (fieldId != null && fieldId.CanWrite)
             {
-                fieldId.SetValue(entity, Guid.NewGuid());
+                fieldId.SetValue(entity, recordId);
 
             }
             if (entity is BaseEntity)
@@ -143,13 +143,10 @@ namespace MISA.WebFresher042023.Demo.Core.Services
                 }
             }
 
-            var result = await _baseRepository.InsertAsync(entity);
-            if (result == null)
-            {
-                // throw loi server
-                throw new Exception();
-            }
-            var entityDTO = _mapper.Map<TEntityDTO>(result);
+            await _baseRepository.InsertAsync(entity);
+            var res = await _baseRepository.GetAsync(recordId);
+
+            var entityDTO = _mapper.Map<TEntityDTO>(res);
             return entityDTO;
         }
 

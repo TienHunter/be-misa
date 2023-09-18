@@ -59,14 +59,14 @@ namespace MISA.WebFresher042023.Demo.Core.Interface.Repositories
         /// </summary>
         /// <returns>ban ghi</returns>
         /// Created by: vdtien (18/6/2023)
-        public Task<TEntity?> InsertAsync(TEntity record);
+        public Task<int> InsertAsync(TEntity record);
 
         /// <summary>
         /// cap nhat 1 ban ghi
         /// </summary>
         /// <returns>ban ghi</returns>
         /// Created by: vdtien (18/6/2023)
-        public Task<TEntity?> UpdateAsync(TEntity record);
+        public Task<int> UpdateAsync(TEntity record);
 
         /// <summary>
         /// xoa 1 ban ghi

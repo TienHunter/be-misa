@@ -107,14 +107,13 @@ namespace MISA.WebFresher042023.Demo.Infrastructure.Repositories
         /// </summary>
         /// <returns>ban ghi</returns>
         /// Created by: vdtien (19/6/2023)
-        public async Task<TEntity?> InsertAsync(TEntity record)
+        public virtual async Task<int> InsertAsync(TEntity record)
         {
             // chuan bi cau lenh
             string procName = String.Format(Procedures.INSERT, tableName);
 
             // chuan bi tham so 
             var parameters = new DynamicParameters();
-            var recordId = (Guid)record.GetType().GetProperty($"{tableName}Id").GetValue(record);
 
             // map property của employee với tham số truyền vào database
             foreach (var prop in record.GetType().GetProperties())
@@ -126,9 +125,10 @@ namespace MISA.WebFresher042023.Demo.Infrastructure.Repositories
                 }
                 parameters.Add("@v_" + prop.Name, prop.GetValue(record, null));
             }
-            await _uow.Connection.ExecuteAsync(procName, parameters, transaction: _uow.Transaction, commandType: System.Data.CommandType.StoredProcedure);
-            var result = await GetAsync(recordId);
-            return result;
+            var res =  await _uow.Connection.ExecuteAsync(procName, parameters, transaction: _uow.Transaction, commandType: System.Data.CommandType.StoredProcedure);
+
+            if (res == 0) throw new Exception("insert failure");
+            return res;
 
         }
 
@@ -137,7 +137,7 @@ namespace MISA.WebFresher042023.Demo.Infrastructure.Repositories
         /// </summary>
         /// <returns> ban ghi</returns>
         /// Created by: vdtien (19/6/2023)
-        public async Task<TEntity?> UpdateAsync(TEntity record)
+        public async Task<int> UpdateAsync(TEntity record)
         {
             // chuan bi cau lenh
             string procName = String.Format(Procedures.UPDATE, tableName);
@@ -158,10 +158,10 @@ namespace MISA.WebFresher042023.Demo.Infrastructure.Repositories
             }
 
 
-            await _uow.Connection.ExecuteAsync(procName, parameters, transaction: _uow.Transaction, commandType: System.Data.CommandType.StoredProcedure);
+            var res = await _uow.Connection.ExecuteAsync(procName, parameters, transaction: _uow.Transaction, commandType: System.Data.CommandType.StoredProcedure);
 
-            var result = await GetAsync(recordId);
-            return result;
+            if (res == 0) throw new Exception("update failure");
+            return res;
 
         }
 

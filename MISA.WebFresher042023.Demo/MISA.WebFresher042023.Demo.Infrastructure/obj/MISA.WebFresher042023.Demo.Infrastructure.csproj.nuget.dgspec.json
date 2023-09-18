@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Infrastructure\\MISA.WebFresher042023.Demo.Infrastructure.csproj": {}
+    "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Infrastructure\\MISA.WebFresher042023.Demo.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj": {
+    "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj",
+        "projectUniqueName": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj",
         "projectName": "MISA.WebFresher042023.Demo.Common",
-        "projectPath": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj",
+        "projectPath": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj",
         "packagesPath": "C:\\Users\\Tien\\.nuget\\packages\\",
-        "outputPath": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\obj\\",
+        "outputPath": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tien\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Core\\MISA.WebFresher042023.Demo.Core.csproj": {
+    "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Core\\MISA.WebFresher042023.Demo.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Core\\MISA.WebFresher042023.Demo.Core.csproj",
+        "projectUniqueName": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Core\\MISA.WebFresher042023.Demo.Core.csproj",
         "projectName": "MISA.WebFresher042023.Demo.Core",
-        "projectPath": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Core\\MISA.WebFresher042023.Demo.Core.csproj",
+        "projectPath": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Core\\MISA.WebFresher042023.Demo.Core.csproj",
         "packagesPath": "C:\\Users\\Tien\\.nuget\\packages\\",
-        "outputPath": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Core\\obj\\",
+        "outputPath": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tien\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj": {
-                "projectPath": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj"
+              "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj": {
+                "projectPath": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Common\\MISA.WebFresher042023.Demo.Common.csproj"
               }
             }
           }
@@ -106,6 +106,14 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[7.0.10, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -132,14 +140,14 @@
         }
       }
     },
-    "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Infrastructure\\MISA.WebFresher042023.Demo.Infrastructure.csproj": {
+    "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Infrastructure\\MISA.WebFresher042023.Demo.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Infrastructure\\MISA.WebFresher042023.Demo.Infrastructure.csproj",
+        "projectUniqueName": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Infrastructure\\MISA.WebFresher042023.Demo.Infrastructure.csproj",
         "projectName": "MISA.WebFresher042023.Demo.Infrastructure",
-        "projectPath": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Infrastructure\\MISA.WebFresher042023.Demo.Infrastructure.csproj",
+        "projectPath": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Infrastructure\\MISA.WebFresher042023.Demo.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Tien\\.nuget\\packages\\",
-        "outputPath": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Infrastructure\\obj\\",
+        "outputPath": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tien\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -156,8 +164,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Core\\MISA.WebFresher042023.Demo.Core.csproj": {
-                "projectPath": "D:\\source-code\\misa\\MisaFresher.04.GD2\\vdtien\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Core\\MISA.WebFresher042023.Demo.Core.csproj"
+              "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Core\\MISA.WebFresher042023.Demo.Core.csproj": {
+                "projectPath": "D:\\source-code\\misa\\be\\MISA.WebFresher042023.Demo\\MISA.WebFresher042023.Demo.Core\\MISA.WebFresher042023.Demo.Core.csproj"
               }
             }
           }
@@ -180,6 +188,10 @@
               "target": "Package",
               "version": "[6.2.6, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.21, )"
+            },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -187,6 +199,10 @@
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.2.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
             }
           },
           "imports": [

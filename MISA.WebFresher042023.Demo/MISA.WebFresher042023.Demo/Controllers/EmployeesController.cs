@@ -8,9 +8,11 @@ using MISA.WebFresher042023.Demo.Common.Resources;
 using MySqlConnector;
 using System.Text.RegularExpressions;
 using MISA.WebFresher042023.Demo.Common.DTO.Employee;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MISA.WebFresher042023.Demo.Controllers
 {
+
     [Route("api/v1/[controller]")]
     [ApiController]
     public class EmployeesController : BasesController<EmployeeDTO, EmployeeCreateDTO, EmployeeUpdateDTO>
